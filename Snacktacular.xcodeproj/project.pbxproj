@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307FE89E2442604900FBAF7A /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FE89D2442604900FBAF7A /* Spot.swift */; };
+		307FE8A0244260EE00FBAF7A /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FE89F244260EE00FBAF7A /* Spots.swift */; };
 		3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */; };
 		3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */; };
 		3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		307FE89D2442604900FBAF7A /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		307FE89F244260EE00FBAF7A /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsTableViewCell.swift; sourceTree = "<group>"; };
 		3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				3E8390DF206597F600512DEA /* AppDelegate.swift */,
+				307FE89F244260EE00FBAF7A /* Spots.swift */,
+				307FE89D2442604900FBAF7A /* Spot.swift */,
 				3E8390E1206597F600512DEA /* SpotsListViewController.swift */,
 				3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */,
 				3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */,
@@ -157,7 +163,9 @@
 				3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */,
 				3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */,
 				3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */,
+				307FE89E2442604900FBAF7A /* Spot.swift in Sources */,
 				3E8390E0206597F600512DEA /* AppDelegate.swift in Sources */,
+				307FE8A0244260EE00FBAF7A /* Spots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
