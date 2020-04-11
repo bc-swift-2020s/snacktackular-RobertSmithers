@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3039794624426C83002CDD2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3039794524426C82002CDD2B /* GoogleService-Info.plist */; };
+		3039794824427CA7002CDD2B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039794724427CA7002CDD2B /* APIKeys.swift */; };
 		307FE89E2442604900FBAF7A /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FE89D2442604900FBAF7A /* Spot.swift */; };
 		307FE8A0244260EE00FBAF7A /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307FE89F244260EE00FBAF7A /* Spots.swift */; };
 		3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		3039794524426C82002CDD2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3039794724427CA7002CDD2B /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		307FE89D2442604900FBAF7A /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		307FE89F244260EE00FBAF7A /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				3E8390E8206597F600512DEA /* LaunchScreen.storyboard */,
 				3E8390EB206597F600512DEA /* Info.plist */,
 				3039794524426C82002CDD2B /* GoogleService-Info.plist */,
+				3039794724427CA7002CDD2B /* APIKeys.swift */,
 				3E75FC492441512000C8DBB1 /* Podfile */,
 			);
 			path = Snacktacular;
@@ -283,6 +286,7 @@
 				3E8390E2206597F600512DEA /* SpotsListViewController.swift in Sources */,
 				3E0F96102065AC1A00AE450D /* SpotPhotosCollectionViewCell.swift in Sources */,
 				3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */,
+				3039794824427CA7002CDD2B /* APIKeys.swift in Sources */,
 				3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */,
 				3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */,
 				307FE89E2442604900FBAF7A /* Spot.swift in Sources */,
