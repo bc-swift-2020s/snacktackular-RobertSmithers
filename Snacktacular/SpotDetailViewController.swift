@@ -59,7 +59,7 @@ class SpotDetailViewController: UIViewController {
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         spot.saveData { success in
             if success {
-                leaveViewController()
+                self.leaveViewController()
             } else {
                 print("*** ERROR: Couldn't leave this view controller because data wasn't saved.")
             }
