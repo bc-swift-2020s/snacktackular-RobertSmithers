@@ -23,7 +23,7 @@ class SpotDetailViewController: UIViewController {
     var spot: Spot!
     let regionDistance: CLLocationDistance = 750 // 750 m ~= 0.5 mi
     var locationManager: CLLocationManager!
-    var currentLocation: CLLocation! = nil
+    var currentLocation: CLLocation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -176,6 +176,7 @@ extension SpotDetailViewController: CLLocationManagerDelegate {
         var name = ""
         var address = ""
         currentLocation = locations.last
+        print("*** WARNING: Not sure why location isn't right... Current location: \(currentLocation)")
         spot.coordinate = currentLocation.coordinate
         geoCoder.reverseGeocodeLocation(currentLocation, completionHandler: {placemarks, error in
             if placemarks != nil {
