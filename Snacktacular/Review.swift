@@ -18,6 +18,7 @@ class Review {
     var documentID: String
     
     var dictionary: [String: Any] {
+        print("^^^ dictionary: Date comes out as \(Date())")
         return ["title": title, "text": text, "rating": rating, "reviewerUserID": reviewerUserID, "date": date, "documentID": documentID]
     }
     
@@ -27,12 +28,27 @@ class Review {
         self.rating = rating
         self.reviewerUserID = reviewerUserID
         self.date = date
+        print("^^^ Date initialized as \(self.date)")
         self.documentID = documentID
     }
     
     convenience init() {
         let currentUserID = Auth.auth().currentUser?.email ?? "Unknown User"
+        print("^^^ convenience init1: Date comes out as \(Date())")
         self.init(title: "", text: "", rating: 0, reviewerUserID: currentUserID, date: Date(), documentID: "")
+    }
+    
+    convenience init(dictionary: [String: Any]) {
+        let title = dictionary["title"] as! String? ?? ""
+        let text = dictionary["text"] as! String? ?? ""
+        let rating = dictionary["rating"] as! Int? ?? 0
+        let reviewerUserID = dictionary["reviewerUserID"] as! String
+        print("Title: \(title)")
+        print("convenience init2: Date = \(dictionary["date"]!)")
+//        Date? or Date() is not the same type as what comes out of dictionary (FIRTimestamp)
+        let fbDate = dictionary["date"] as! Timestamp? ?? Timestamp()
+        let date = fbDate.dateValue()
+        self.init(title: title, text: text, rating: rating, reviewerUserID: reviewerUserID, date: date, documentID: "")
     }
     
     func saveData(spot: Spot, completed: @escaping (Bool) -> ()) {
