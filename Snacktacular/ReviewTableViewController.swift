@@ -21,6 +21,17 @@ class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var buttonsBackgroundView: UIView!
     
+    @IBOutlet var starButtonCollection: [UIButton]!
+    
+    var rating = 0 {
+        didSet {
+            for starButton in starButtonCollection {
+                let image = UIImage(named: (starButton.tag < rating ? "star-filled": "star-empty"))
+                starButton.setImage(image, for: .normal)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // hide keyboard if tap outside of field
@@ -36,6 +47,11 @@ class ReviewTableViewController: UITableViewController {
         } else {
             navigationController?.popViewController(animated: true)
         }
+    }
+    
+    @IBAction func starButtonPressed(_ sender: UIButton) {
+        rating = sender.tag + 1
+        
     }
     
     @IBAction func reviewTitleChanged(_ sender: UITextField) {
