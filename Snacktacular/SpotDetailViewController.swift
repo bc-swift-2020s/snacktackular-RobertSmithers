@@ -99,9 +99,11 @@ class SpotDetailViewController: UIViewController {
     
     
     @IBAction func photoButtonPressed(_ sender: UIButton) {
+        
     }
     
     @IBAction func reviewButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "AddReview", sender: nil)
     }
     
     @IBAction func lookupPlacePressed(_ sender: UIBarButtonItem) {
